@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .radio-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* space between radio buttons */
+            margin: 10px 0;
+        }
+        select {
+            padding: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <hr style="width: 50%; margin: 20px auto;">
+
+    <!-- Add form tag here -->
+    <form action="#" method="POST">
+        <div class="radio-container">
+            <label for="id101">
+                <input type="radio" value="class XI" name="class" id="id101"> Class XI
+            </label>
+            <label for="id102">
+                <input type="radio" value="class XII" name="class" id="id102"> Class XII
+            </label>
+        </div>
+        <hr style="width: 50%; margin: 20px auto;">
+        <div class="radio-container">
+            <label for="Math">
+                <input type="checkbox" value="Math" name="Subject" id="Math"> Math
+            </label>
+            <label for="Science">
+                <input type="checkbox" value="Science" name="Subject" id="Science"> Science
+            </label>
+            <label for="SS_T">
+                <input type="checkbox" value="SS.T" name="Subject" id="SS_T"> SS.T
+            </label>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <label for="city">Select City:</label>
+            <select name="city" id="city">
+                <option value="Hafizabad">Hafizabad</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Multan">Multan</option>
+            </select>
+        </div>
+        <hr style="width: 50%; margin: 20px auto;">
+        <textarea name="Feedback" id="101" placeholder="Enter your Feedback on this WebPage" rows="3" cols="10"></textarea>
+        <br>
+        <!-- Submit button inside the form -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
